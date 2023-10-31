@@ -1,10 +1,10 @@
 const { readFileSync } = require("fs")
 
-const file_path = __dirname.concat("/input.txt");
+const puzzle_input = __dirname.concat("/input.txt");
 let calories_list_to_each_elve = [];
 
 try {
-  const file_content = readFileSync(file_path, 'utf-8');
+  const file_content = readFileSync(puzzle_input, 'utf-8');
   calories_list_to_each_elve = file_content.split('\n\n');
 
 } catch (error) {
